@@ -20,11 +20,6 @@ class GetRequest extends Request
         ];
 
         $this->setOptions($options);
-
-        $out = $this->execute();
-        $this->close();
-
-        return $out;
     }
 
     private function buildParamString($params)

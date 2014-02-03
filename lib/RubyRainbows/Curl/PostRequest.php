@@ -19,10 +19,5 @@ class PostRequest extends Request
         ];
 
         $this->setOptions($options);
-
-        $out = $this->execute();
-        $this->close();
-
-        return $out;
     }
 }
