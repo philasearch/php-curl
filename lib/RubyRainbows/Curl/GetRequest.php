@@ -4,7 +4,7 @@ namespace RubyRainbows\Curl;
 
 class GetRequest extends Request
 {
-    public function post($url, $params=[])
+    public function get($url, $params=[])
     {
         $param_string   = $this->buildParamString($params);
         $url            = $url . $param_string;
