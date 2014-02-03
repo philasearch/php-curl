@@ -4,9 +4,9 @@ namespace RubyRainbows\Curl;
 
 class PostRequest extends Request
 {
-    public function __construct($url, $fields=[])
+    public function post($url, $fields=[])
     {
-        parent::__construct($url);
+        $this->init($url);
 
         $options = [
             CURLOPT_FAILONERROR     => true,

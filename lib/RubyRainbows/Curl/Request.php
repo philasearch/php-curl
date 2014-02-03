@@ -6,7 +6,7 @@ class Request
 {
     protected $handle;
 
-    public function __construct($url)
+    public function init($url)
     {
         $this->handle = curl_init($url);
     }
@@ -23,9 +23,9 @@ class Request
         }
     }
 
-    public function execute()
+    public function execute($opts = [])
     {
-        return curl_exec($this->handle);
+        return (array_key_exists('json_depth', $opts)) ? json_decode($this->exec(), $opts['json_depth']) : $this->exec();
     }
 
     public function getInfo($name)
@@ -38,5 +38,8 @@ class Request
         curl_close($this->handle);
     }
 
-
+    protected function exec()
+    {
+        return curl_exec($this->handle);
+    }
 }

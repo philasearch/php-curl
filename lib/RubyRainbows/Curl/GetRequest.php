@@ -4,12 +4,12 @@ namespace RubyRainbows\Curl;
 
 class GetRequest extends Request
 {
-    public function __construct($url, $params=[])
+    public function post($url, $params=[])
     {
         $param_string   = $this->buildParamString($params);
         $url            = $url . $param_string;
 
-        parent::__construct($url);
+        $this->init($url);
 
         $options = [
             CURLOPT_FAILONERROR     => true,
