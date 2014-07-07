@@ -1,7 +1,11 @@
 {
     "name": "RubyRainbows/Curl",
     "description": "PHP OOP Wrapper",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "type": "library",
+    "homepage": "https://github.com/rubyrainbows/php-curl",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Thomas Muntaner",
@@ -11,12 +15,12 @@
     "require": {
     },
     "require-dev": {
-        "phpunit/phpunit": "3.9.*@dev",
-        "mockery/mockery": "dev-master@dev"
+        "phpunit/phpunit": "4.0.20",
+        "mockery/mockery": "0.9.1"
     },
     "autoload": {
-        "psr-0": {
-            "RubyRainbows": "lib"
+        "psr-4": {
+            "RubyRainbows\\": "lib/"
         }
     }
 }
