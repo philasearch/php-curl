@@ -4,11 +4,11 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 class TestCase extends \PHPUnit_Framework_TestCase
 {
-    public function setUp()
+    public function setUp ()
     {
     }
 
-    public function tearDown()
+    public function tearDown ()
     {
         \Mockery::close();
     }

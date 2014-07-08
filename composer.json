@@ -5,7 +5,7 @@
     "license": "MIT",
     "type": "library",
     "homepage": "https://github.com/rubyrainbows/php-curl",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "authors": [
         {
             "name": "Thomas Muntaner",
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RubyRainbows\\": "lib/"
+            "RubyRainbows\\": "lib/RubyRainbows"
         }
     }
 }
