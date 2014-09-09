@@ -1,15 +1,14 @@
 {
-    "name": "rubyrainbows/curl",
+    "name": "philasearch/curl",
     "description": "PHP OOP Wrapper",
     "minimum-stability": "stable",
-    "license": "MIT",
     "type": "library",
-    "homepage": "https://github.com/rubyrainbows/php-curl",
-    "version": "1.0.3",
+    "homepage": "https://github.com/philasearch/php-curl",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Thomas Muntaner",
-            "email": "thomas.muntaner@rubyrainbows.com"
+            "email": "muntaner@philasearch.com"
         }
     ],
     "require": {
@@ -20,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RubyRainbows\\": "lib/RubyRainbows"
+            "Philasearch\\": "lib/Philasearch"
         }
     }
 }

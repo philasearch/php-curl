@@ -1,6 +1,6 @@
 <?php
 
-namespace RubyRainbows\Curl;
+namespace Philasearch\Curl;
 
 class GetRequest extends Request
 {
